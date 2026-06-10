@@ -18,7 +18,8 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t demo-app:latest -f docker/Dockerfile.vulnerable .
+        # docker build -t demo-app:latest -f docker/Dockerfile.vulnerable .
+        docker build -t demo-app:latest -f docker/Dockerfile.secure .
 
     - name: Install Trivy and scan image
       uses: aquasecurity/trivy-action@master
