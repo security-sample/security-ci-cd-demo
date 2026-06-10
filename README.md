@@ -53,7 +53,7 @@ A DevSecOps pilot project showcasing automated security validation using Docker,
     5.1 Vulnerable Image
         The vulnerable Dockerfile uses an end‑of‑life Python base image to ensure that Trivy detects multiple high‑severity vulnerabilities.
         
-		     docker/Dockerfile.vulnerable
+		 docker/Dockerfile.vulnerable
         
          FROM python:3.12-slim
          WORKDIR /app
